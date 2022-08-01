@@ -1,3 +1,13 @@
+:root{
+    --ligth:#ebf5fc;
+    --braco: #fff;
+    --cinza: #777;
+    --azul-celeste: #03a9f4;
+    --rosa-goiaba: #ff568f;
+    --lilas: #b95ce4;
+    --roxo: #4f29cd;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #ebf5fc;
+    background: var(--ligth);
 }
 
 .container{
@@ -40,7 +50,7 @@ body{
     left: 20px;
     right: 20px;
     bottom: 20px;
-    background: #ebf5fc;
+    background: var(--ligth);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     display: flex;
@@ -51,7 +61,7 @@ body{
 .container .card:hover .box{
     transform: translateY(-50px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+    background: linear-gradient(45deg, var(--lilas), var(--roxo));
 }
 
 
@@ -75,7 +85,7 @@ body{
 
 .container .card .box .content h3{
     font-size: 1.8em;
-    color: #777;
+    color: var(--cinza);
     z-index: 1;
     transition: 0.5s;
 }
@@ -83,7 +93,7 @@ body{
 .container .card .box .content p{
     font-size: 1em;
     font-weight: 300;
-    color: #777;
+    color: var(--cinza);
     z-index: 1;
     transition: 0.5s;
 }
@@ -96,14 +106,14 @@ body{
     position: relative;
     display: inline-block;
     padding: 8px 20px;
-    background: #03a9f4;
+    background: var(--azul-celeste);
     margin-top: 15px;
     border-radius: 20px;
-    color: #fff;
+    color: var(--braco);
     text-decoration: none;
     font-weight: 400;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .container .card:hover .box .content a{
-    background: #ff568f;
+    background: var(--rosa-goiaba)
 }
